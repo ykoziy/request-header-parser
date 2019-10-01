@@ -1,7 +1,7 @@
 const api = require('express').Router();
-const currTimestamp = require('./whoami');
+const whoami = require('./whoami');
 
-api.use('/whoami', currTimestamp);
+api.use('/whoami', whoami);
 
 
 module.exports = api;
